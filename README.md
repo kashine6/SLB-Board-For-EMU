@@ -16,7 +16,7 @@
 ---
 
 ## Introduction
-**SLB (Solo Lane Board) ** is a control board designed specifically for **EMU**-style MMU systems, where each lane is driven by an independent controller board.  
+**SLB (Solo Lane Board)** is a control board designed specifically for **EMU**-style MMU systems, where each lane is driven by an independent controller board.  
 
 No WAGO connectors and no LED daisy-chaining. Supports power and CANBUS cascading, and is compatible with the EMU_Hatch_Board, greatly simplifying EMU wiring.
 
