@@ -24,7 +24,7 @@ No WAGO connectors and no LED daisy-chaining. Supports power and CANBUS cascadin
 
 This motherboard is factory-produced using high-quality electronic components with SMT assembly, ensuring reliable and consistent quality.
 
-<img src="Assets/1-4.png" width="70%"/>
+<img src="Assets/1-4.png" width="100%"/>
 
 **It has the following features:**
 
@@ -46,14 +46,14 @@ This motherboard is factory-produced using high-quality electronic components wi
 
 ## 1. PIN Diagram
 
-<img src="Assets/1-2.jpg" width="80%"/>
+<img src="Assets/1-2.jpg" width="100%"/>
 
 
 
 
 ## 2. EMU Wiring Diagram
 
-<img src="Assets/1-5.jpg" width="30%"/>
+<img src="Assets/1-5.jpg" width="80%"/>
 
 
 
@@ -139,7 +139,7 @@ Use a jumper to short the 5V USB pins. After shorting, you can power the board v
 
 If you are using 24V to power the board, you do not need to short the jumper, but you can only use Method 2 below to enter DFU mode.
 
-<img src="Assets/7.png" width="70%"/>
+<img src="Assets/7.png" width="100%"/>
 
 - **Method 1 to enter DFU:** With the board completely powered off, press and hold the Boot button, connect the board to the host computer with a Type-C cable, then release the Boot button.
 
@@ -178,7 +178,7 @@ After flashing is complete, please unplug the USB cable and connect the CAN sign
 > 2: If you have multiple CAN devices, you only need to short the 120-ohm resistor on one device. It is best to short the 120-ohm resistor on the mainboard at the end of the chain.  
 > 3: Pay close attention to the wiring order of 24V, GND, CAN-H, and CAN-L. Double-check carefully. Incorrect wiring may cause the mainboard to burn out, and you will be responsible for the consequences.  
 
-<img src="Assets/10.png" width="70%"/>
+<img src="Assets/10.png" width="100%"/>
 
 
 
@@ -272,7 +272,7 @@ Connect the CAN signal cable and 24V power supply.
 > 2: If you have multiple CAN devices, you only need to short the 120-ohm resistor on one device.  
 > 3: Pay close attention to the wiring order of 24V, GND, CAN-H, and CAN-L. Double-check carefully. Incorrect wiring may cause the mainboard to burn out, and you will be responsible for the consequences.  
 
-<img src="Assets/10.png" width="70%"/>
+<img src="Assets/10.png" width="100%"/>
 
 
 
@@ -326,7 +326,7 @@ Use a jumper to short the 5V USB pins. After shorting, you can power the board v
 
 If you are using 24V to power the board, you do not need to short the jumper, but you can only use Method 2 below to enter DFU mode.
 
-<img src="Assets/21.png" width="70%"/>
+<img src="Assets/21.png" width="100%"/>
 
 
 
