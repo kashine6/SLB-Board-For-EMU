@@ -5,9 +5,9 @@
 
 - [Introduction](#introduction)
 - [1. PIN Diagram](#1-pin-diagram)
-- [2. EMU Wiring Diagram](#4-emu-wiring-diagram)
-- [3. EMU Configuration](#5-emu-configuration)
-- [4. Flashing Guide](#3-flashing-guide)
+- [2. EMU Wiring Diagram](#2-emu-wiring-diagram)
+- [3. EMU Configuration](#3-emu-configuration)
+- [4. Flashing Guide](#4-flashing-guide)
   - [4.1. Flashing Katapult (Optional)](#41-flashing-katapult-optional)
   - [4.2. Compiling Klipper Firmware](#42-compiling-klipper-firmware)
   - [4.3. Updating Firmware via Katapult](#43-updating-firmware-via-katapult)
