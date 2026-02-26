@@ -53,11 +53,15 @@ This motherboard is factory-produced using high-quality electronic components wi
 
 ## 2. EMU Wiring Diagram
 
+<img src="Assets/1-9.png" width="100%"/>
+
 <img src="Assets/1-8.jpg" width="100%"/>
 
 <img src="Assets/1-6.png" width="50%"/>
 
-To be defined
+
+
+
 
 
 
