@@ -1,5 +1,6 @@
 # SLB-Board-For-EMU
 
+**The mainboard has entered mass production. A purchase link will be provided once it is ready.**
 
 ## Table of Contents
 
