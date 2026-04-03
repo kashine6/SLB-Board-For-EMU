@@ -21,7 +21,7 @@
 
 No WAGO connectors and no LED daisy-chaining. Supports power and CANBUS cascading, and is compatible with the EMU_Hatch_Board, greatly simplifying EMU wiring.
 
-**⚠️Notice: ** Maximum rated current for SLB is 8A. If you plan to use PTC drying, only one unit can be operated at a time. For more than one unit, please use WAGO terminals to connect the power supply in parallel.
+**Notice: ** Maximum rated current for SLB is 8A. If you plan to use PTC drying, only one unit can be operated at a time. For more than one unit, please use WAGO terminals to connect the power supply in parallel.
 
 
 
@@ -36,9 +36,9 @@ This board is factory-produced using high-quality electronic components with SMT
 **It has the following features:**
 
 - **Main Chip**: STM32G0B1CBT6 MCU.
+- **Dual power connectors and dual CAN interfaces** for convenient daisy-chaining.
 - **1 x Onboard TMC2209** operating in UART mode, with 5V logic circuitry.
 - **1x 8-pin XH2.54 connector** is provided for direct connection to the **EMU Hatch Board**.
-- **Dual power connectors and dual CAN interfaces** for convenient daisy-chaining.
 - **2 × Neo pixel RGB interfaces**, one of which is integrated into the 8-pin XH2.54 connector.
 - **6 × I/O connectors**, two of which are integrated into the 8-pin XH2.54 connector.
 - **3 × Hardware I2C interfaces**, one of which is integrated into the 8-pin XH2.54 connector.
