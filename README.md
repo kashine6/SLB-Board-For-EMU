@@ -21,7 +21,7 @@
 
 No WAGO connectors and no LED daisy-chaining. Supports power and CANBUS cascading, and is compatible with the EMU_Hatch_Board, greatly simplifying EMU wiring.
 
-**Notice: ** Maximum rated current for SLB is 8A. If you plan to use PTC drying, only one unit can be operated at a time. For more than one unit, please use WAGO terminals to connect the power supply in parallel.
+**Notice:** Maximum rated current for SLB is 8A. If you plan to use PTC drying, only one unit can be operated at a time. For more than one unit, please use WAGO terminals to connect the power supply in parallel.
 
 
 
