@@ -45,13 +45,15 @@ This motherboard is factory-produced using high-quality electronic components wi
 
 
 
-<img src="Assets/25.jpg" width="100%"/>
+<img src="Assets/28.jpg" width="100%"/>
+
+<img src="Assets/29.jpg" width="100%"/>
 
 
 
-<img src="Assets/26.jpg" width="60%"/>
+<img src="Assets/26.jpg" width="80%"/>
 
-<img src="Assets/27.jpg" width="60%"/>
+<img src="Assets/27.jpg" width="80%"/>
 
 
 
