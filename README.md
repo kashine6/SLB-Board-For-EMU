@@ -31,7 +31,7 @@ The SLB is not only suitable for EMU, but can also provide additional channel ex
 
 This board is factory-produced using high-quality electronic components with SMT assembly, ensuring reliable and consistent quality.
 
-<img src="Assets/1-4.png" width="100%"/>
+<img src="Assets/1-4.jpg" width="100%"/>
 
 **It has the following features:**
 
