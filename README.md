@@ -43,7 +43,21 @@ This motherboard is factory-produced using high-quality electronic components wi
 - **1 x 5V Brushed DC motor drivers** with forward/reverse support, En pin, and sleep mode
 - **1 x SPI interfaces**
 
-  
+
+
+<img src="Assets/25.jpg" width="100%"/>
+
+
+
+<img src="Assets/26.jpg" width="60%"/>
+
+<img src="Assets/27.jpg" width="60%"/>
+
+
+
+
+
+
 
 ## 1. PIN Diagram
 
