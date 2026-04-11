@@ -8,11 +8,11 @@
 - [1. PIN Diagram](#1-pin-diagram)
 - [2. EMU Wiring Diagram](#2-emu-wiring-diagram)
 - [3. EMU Configuration](#3-emu-configuration)
-- [4. Flashing Guide](#4-flashing-guide)
-  - [4.1. Flashing Katapult (Optional)](#41-flashing-katapult-optional)
-  - [4.2. Compiling Klipper Firmware](#42-compiling-klipper-firmware)
-  - [4.3. Updating Firmware via Katapult](#43-updating-firmware-via-katapult)
-  - [4.4. Updating Firmware via DFU](#44-updating-firmware-via-dfu)
+- [5. Flashing Guide (Optional)](#5-flashing-guide-optional)
+  - [5.1. Flashing Katapult (Optional)](#51-flashing-katapult-optional)
+  - [5.2. Compiling Klipper Firmware](#52-compiling-klipper-firmware)
+  - [5.3. Updating Firmware via Katapult](#53-updating-firmware-via-katapult)
+  - [5.4. Updating Firmware via DFU](#54-updating-firmware-via-dfu)
 
 ---
 
@@ -230,9 +230,9 @@ https://github.com/DW-Tas/EMU/blob/main/docs/software_setup/02-happy-hare-setup.
 
 
 
-## 4. Flashing Guide
+## 5. Flashing Guide (Optional)
 
-### 4.1 Flashing Katapult (Optional)
+### 5.1 Flashing Katapult (Optional)
 
 Users who only use a CAN connection and want the convenience of quick firmware updates by pressing the Reset button can choose to flash Katapult (formerly known as Canboot).
 
@@ -358,7 +358,7 @@ Use the following command to check the CAN UUID.
 
 
 
-### 4.2 Compiling Klipper Firmware
+### 5.2 Compiling Klipper Firmware
 
 SSH into your host machine.
 
@@ -423,7 +423,7 @@ make
 
 
 
-### 4.3 Updating Firmware via Katapult
+### 5.3 Updating Firmware via Katapult
 
 Connect the CAN signal cable and 24V power supply.
 
@@ -475,7 +475,7 @@ Then continue to use the previous command to check the CAN information.
 > To upgrade the CAN firmware in the future, repeat this process. When compiling the Katapult firmware earlier, we set it to enter Katapult mode by double-pressing the reset button. 
 > In practice, you can also directly enter the flashing command, and the board will automatically restart and enter Katapult.  
 
-### 4.4 Updating Firmware via DFU
+### 5.4 Updating Firmware via DFU
 
 1: Enter DFU mode.
 
