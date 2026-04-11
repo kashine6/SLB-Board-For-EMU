@@ -232,6 +232,14 @@ https://github.com/DW-Tas/EMU/blob/main/docs/software_setup/02-happy-hare-setup.
 
 ## 5. Flashing Guide (Optional)
 
+> [!TIP]  
+>
+> The **Katapult + Klipper** firmware has already been flashed before shipping, and the CANBUS speed is 1,000,000. So in normal cases, there is no need to reflash.  
+>
+> If it is really necessary, you can directly refer to **section 5.3** to upgrade the Klipper firmware using Katapult.
+
+
+
 ### 5.1 Flashing Katapult (Optional)
 
 Users who only use a CAN connection and want the convenience of quick firmware updates by pressing the Reset button can choose to flash Katapult (formerly known as Canboot).
