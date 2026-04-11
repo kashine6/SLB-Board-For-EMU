@@ -8,6 +8,7 @@
 - [1. PIN Diagram](#1-pin-diagram)
 - [2. EMU Wiring Diagram](#2-emu-wiring-diagram)
 - [3. EMU Configuration](#3-emu-configuration)
+- [4. User Guide for EMU](#4-user-guide-for-emu)
 - [5. Flashing Guide (Optional)](#5-flashing-guide-optional)
   - [5.1. Flashing Katapult (Optional)](#51-flashing-katapult-optional)
   - [5.2. Compiling Klipper Firmware](#52-compiling-klipper-firmware)
@@ -81,6 +82,10 @@ This board is factory-produced using high-quality electronic components with SMT
 <img src="Assets/1-8.jpg" width="100%"/>
 
 <img src="Assets/1-6.png" width="50%"/>
+
+
+
+**Note:** The wiring harness is for demonstration purposes only. Standard ribbon cables are relatively stiff; you may use silicone ribbon cables or regular loose wires instead.
 
 
 
@@ -230,6 +235,38 @@ https://github.com/DW-Tas/EMU/blob/main/docs/software_setup/02-happy-hare-setup.
 
 
 
+
+
+## 4. User Guide for EMU
+
+🟦Has the firmware been flashed
+
+> The **Katapult + Klipper** firmware has already been flashed before shipping, and the CANBUS speed is 1,000,000. So in normal cases, there is no need to reflash.  
+
+
+
+🟦About How to use
+
+> You can mount it directly onto the EMU. Note that you may need to remove most of the `120Ω jumpers` on the SLB board (usually keeping only the last one). When the system is unpowered, make sure to use a multimeter to measure the resistance between CAN-H and CAN-L, which should be 60Ω.
+
+
+
+🟦How to find the UUID
+
+>Start from the first lane (lane0). Double-click the reset button, then use the command below to find all UUIDs. The UUID shown as “canboot” is the UUID of the current lane. Press the reset button once again; at this point, you will find that the UUID marked as “canboot” is no longer displayed. Then continue the same procedure for the next lane.
+
+``` 
+~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
+```
+
+![img](Assets/30.png)
+
+
+
+
+
+
+
 ## 5. Flashing Guide (Optional)
 
 > [!TIP]  
@@ -307,7 +344,7 @@ Use a jumper to short the 5V USB pins. After shorting, you can power the board v
 
 If you are using 24V to power the board, you do not need to short the jumper, but you can only use Method 2 below to enter DFU mode.
 
-<img src="Assets/7.png" width="100%"/>
+<img src="Assets/21.png" width="100%"/>
 
 - **Method 1 to enter DFU:** With the board completely powered off, press and hold the Boot button, connect the board to the host computer with a Type-C cable, then release the Boot button.
 
