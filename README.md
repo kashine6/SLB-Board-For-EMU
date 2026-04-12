@@ -141,6 +141,10 @@ aliases:
 
 **MMU NEOPIXEL LED SUPPORT (mmu_hardware.cfg):**
 
+
+
+**Do Not Use the EMU Button LED Board:**
+
 ``` python
 # MMU NEOPIXEL LED SUPPORT ------------------------------------------------------------------------------------
 
@@ -184,6 +188,77 @@ animation: True                         # Use led-animation-effects
 exit_effect: gate_status                # gate_status in the eject buttons
 entry_effect: filament_color            # filament_color in the dry box LED
 
+status_effect: off                      # no status LED is on the unit
+logo_effect: (0, 0, 0)                  # no Logo LED is on the unit
+white_light: (1, 1, 1)                  # RGB color for static white light
+black_light: (1, 1, 1)                  # RGB color used to represent "black" filament
+empty_light: (0.0, 0.0, 0.0)            # Empty gate has eject button "off"
+
+effect_loading:            mmu_blue_clockwise_slow, (0, 0, 0.4)
+effect_loading_extruder:   mmu_blue_clockwise_fast, (0, 0, 1)
+effect_unloading:          mmu_blue_anticlock_slow, (0, 0, 0.4)
+effect_unloading_extruder: mmu_blue_anticlock_fast, (0, 0, 1)
+effect_heating:            mmu_breathing_red,       (0.3, 0, 0)
+effect_selecting:          mmu_white_fast,          (0.2, 0.2, 0.2)
+effect_checking:           mmu_white_fast,          (0.8, 0.8, 0.8)
+effect_initialized:        mmu_rainbow,             (0.5, 0.2, 0)
+effect_error:              mmu_strobe,              (1, 0, 0)
+effect_complete:           mmu_sparkle,             (0.3, 0.3, 0.3)
+effect_gate_selected:      mmu_static_blue,         (0, 0, 1)
+effect_gate_available:     mmu_static_white_dim,    (0.3, 0.3, 0.3)
+effect_gate_available_sel: mmu_ready_white,         (0.75, 0.75, 0.75)
+effect_gate_unknown:       mmu_static_orange,       (0.5, 0.2, 0)
+effect_gate_unknown_sel:   mmu_ready_orange,        (0.75, 0.3, 0)
+effect_gate_empty:         mmu_static_black,        (0, 0, 0)
+effect_gate_empty_sel:     mmu_ready_red,           (0.2, 0, 0)
+```
+
+
+
+**Use the EMU Button LED Board:**
+
+``` python
+# MMU NEOPIXEL LED SUPPORT ------------------------------------------------------------------------------------
+
+[neopixel mmu0_led0]   # Lane0
+pin: mmu0:MMU_NEOPIXEL_Box
+chain_count: 1			
+color_order: GRBW		# Set based on your particular neopixel specification
+
+[neopixel mmu0_led1]
+pin: mmu0:MMU_NEOPIXEL_Front
+chain_count: 4			
+color_order: GRBW		# Set based on your particular neopixel specification
+
+[neopixel mmu1_led0]   # Lane1
+pin: mmu1:MMU_NEOPIXEL_Box
+chain_count: 1			
+color_order: GRBW		# Set based on your particular neopixel specification
+
+[neopixel mmu1_led1]
+pin: mmu1:MMU_NEOPIXEL_Front
+chain_count: 4			
+color_order: GRBW		# Set based on your particular neopixel specification
+
+.................
+.................
+
+# MMU LED EFFECT SEGMENTS ----------------------------------------------------------------------------------------------
+
+[mmu_leds unit0]
+exit_leds:   neopixel:mmu0_led1 (1-4)
+             neopixel:mmu1_led1 (1-4)# First, third, fifth LED and so forth.
+             .....
+entry_leds:  neopixel:mmu0_led0 (1)
+             neopixel:mmu1_led0 (1)# First, third, fifth LED and so forth.
+             .....
+logo_leds:    
+frame_rate: 24
+
+enabled: True                           # LEDs are enabled at startup
+animation: False                         # Use led-animation-effects
+exit_effect: gate_status                # gate_status in the eject buttons
+entry_effect: filament_color            # filament_color in the dry box LED
 status_effect: off                      # no status LED is on the unit
 logo_effect: (0, 0, 0)                  # no Logo LED is on the unit
 white_light: (1, 1, 1)                  # RGB color for static white light
@@ -316,7 +391,7 @@ make
 ```
 
 
-![img](Assets/4.png)
+![img](Assets/4.jpg)
 
 > [!TIP]
 > The speed can be set according to your needs, 1000000 is recommended.
@@ -427,7 +502,7 @@ make menuconfig
 Set the build parameters according to the protocol you need to use.
 
 
-![img](Assets/13.png)
+![img](Assets/13.jpg)
 
 
 
@@ -442,14 +517,14 @@ Bootloader offset (8KiB bootloader) --->
 Communication interface (USB (on PA11/PA12)) --->
  
 # If using CANBus communication
-Communication interface (CAN bus (on PD0/PD1)) --->
+Communication interface (CAN bus (on PB8/PB9)) --->
  (1000000) CAN bus speed
 ```
 
 Press `q` to exit, and `y` to save.
 
 
-![img](Assets/14.png)
+![img](Assets/14.jpg)
 
 
 
