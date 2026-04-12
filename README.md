@@ -6,6 +6,12 @@
 
 
 
+**⚠️ WARNING ⚠️**
+
+Incorrect operations such as reversing the 24V/GND 🔌 or causing a short circuit ⚡ may damage the board. Since EMU uses multiple boards in series 🔗, please carefully ensure that all wiring is correct ☑️.
+
+
+
 ## Table of Contents
 
 - [Introduction](#introduction)
