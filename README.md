@@ -1,6 +1,10 @@
 # SLB-Board-For-EMU
 
-**The mainboard has entered mass production. A purchase link will be provided once it is ready.**
+**The mass-produced boards is now available on AliExpress.**
+
+ [Aliexpress](https://www.aliexpress.com//item/1005012025112049.html)
+
+
 
 ## Table of Contents
 
