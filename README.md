@@ -89,11 +89,11 @@ This board is factory-produced using high-quality electronic components with SMT
 
 <img src="Assets/1-9.png" width="100%"/>
 
-<img src="Assets/1-8.jpg" width="100%"/>
-
-<img src="Assets/1-6.png" width="50%"/>
+<img src="Assets/1-12.jpg" width="100%"/>
 
 
+
+<img src="Assets/1-11.jpg" width="100%"/>
 
 **Note:** The wiring harness is for demonstration purposes only. Standard ribbon cables are relatively stiff; you may use silicone ribbon cables or regular loose wires instead.
 
