@@ -4,6 +4,10 @@
 
  [Aliexpress](https://www.aliexpress.com//item/1005012025112049.html)
 
+**Authorized Resellers**
+
+* [DREMC](https://store.dremc.com.au/en-us/products/vano3dla-slb-sololaneboard-for-emu-mmu) (Australia)
+* [OneTwo3D](https://www.onetwo3d.co.uk/product/emu-solo-lane-board-slb/) (UK)
 
 
 **⚠️ WARNING ⚠️**
