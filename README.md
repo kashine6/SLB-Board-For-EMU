@@ -48,6 +48,11 @@ This board is factory-produced using high-quality electronic components with SMT
 
 <img src="Assets/1-4.jpg" width="100%"/>
 
+
+**Note:** Due to chip shortages, this board is available with either of two MCU variants. The variants differ only in appearance; their functionality and pin assignments are identical.
+
+<img src="Assets/31.jpg" width="100%"/>
+
 **It has the following features:**
 
 - **Main Chip**: STM32G0B1CBT6 MCU.
